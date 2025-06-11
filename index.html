@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -7,7 +8,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #121212; /* Warna latar belakang gelap */
+            color: #e0e0e0; /* Warna teks terang */
             margin: 0;
             padding: 20px;
         }
@@ -16,39 +18,51 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            background-color: #ffffff;
+            background-color: #1e1e1e; /* Warna header gelap */
             padding: 15px 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
             margin-bottom: 20px;
+            border: 2px solid white; /* Garis pinggir putih */
+            border-radius: 8px; /* Sudut melengkung */
         }
         .logo {
             font-weight: 700;
             font-size: 28px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             user-select: none;
+            border: 2px solid #e0e0e0; /* Garis pinggir terang */
+            padding: 5px; /* Ruang di dalam border */
+            border-radius: 5px; /* Sudut border yang melengkung */
         }
-        .logo .green {
-            color: #4CAF50; /* Green */
+        .logo .cyan {
+            color: cyan; /* Cyan */
         }
-        .logo .blue {
-            color: #2196F3; /* Blue */
+        .logo .yellow {
+            color: yellow; /* Yellow */
+        }
+        .logo .black {
+            color: black; /* Black */
+        }
+        .logo .magenta {
+            color: magenta; /* Magenta */
         }
         .header-text {
             font-size: 20px;
-            color: #555;
+            color: #e0e0e0; /* Warna teks terang */
             font-style: italic;
             user-select: none;
         }
         .container {
-            background-color: white;
+            background-color: white; /* Warna latar belakang kontainer putih */
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
             margin: 0 auto 20px;
             max-width: 800px;
+            color: #121212; /* Warna teks gelap untuk kontainer */
         }
         h2 {
-            color: #4CAF50;
+            color: #4CAF50; /* Warna hijau */
         }
         .price-table {
             width: 100%;
@@ -56,34 +70,37 @@
             margin: 20px 0;
         }
         .price-table th, .price-table td {
-            border: 1px solid #ddd;
+            border: 1px solid #444; /* Garis tabel gelap */
             padding: 8px;
             text-align: left;
+            color: #121212; /* Warna teks tabel gelap */
         }
         .price-table th {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #4CAF50; /* Warna latar belakang header tabel */
+            color: white; /* Warna teks header tabel */
         }
         .button {
             display: inline-block;
             padding: 12px 25px;
-            background-color: #4CAF50;
-            color: white;
+            background-color: #4CAF50; /* Warna tombol */
+            color: white; /* Warna teks tombol */
             text-decoration: none;
             border-radius: 6px;
             margin-top: 20px;
             font-size: 16px;
             font-weight: 600;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
         .button:hover {
-            background-color: #388E3C;
+            background-color: #388E3C; /* Warna tombol saat hover */
+            transform: translateY(-2px);
         }
         .footer {
             text-align: center;
             margin-top: 20px;
             font-size: 0.9em;
-            color: #777;
+            color: #777; /* Warna teks footer */
         }
         @media (max-width: 600px) {
             .price-table th, .price-table td {
@@ -106,7 +123,12 @@
 <body>
 
 <header>
-    <div class="logo"><span class="green">JASA</span> <span class="blue">JOKI.INK</span></div>
+    <div class="logo">
+        <span class="cyan">JASA</span> 
+        <span class="yellow">JOKI</span>
+        <span class="black">.</span>
+        <span class="magenta">INK</span>
+    </div>
     <div class="header-text">Makalah • PPT • Ringkas Materi • Poster Digital • Dan Lain-lain</div>
 </header>
 
@@ -128,10 +150,10 @@
             <td>Rp8.000 – Rp10.000</td>
         </tr>
     </table>
-    <p>Tambahan halaman: Rp1.000 – Rp2.000 / halaman</p>
-    <p>Keterangan: 4 lembar ful isi, cover dan daftar isi "GRATIS" jadi yag di hitung banyak halaman isi<p>
-    </p>contoh: jumlah halaman total 7 termasuk cover dan daftar isi, total halaman cover dan daftar isi 3, maka yang terhitung 4 halaman<p>
-    </p>*hubungi nomor tertera untuk penjelasan lebih detail atau negosiasi*</p>
+    <p><strong>Tambahan halaman:</strong> Rp1.000 – Rp2.000 / halaman</p>
+    <p><strong>Keterangan:</strong> 4 lembar full isi, cover dan daftar isi "GRATIS", jadi yang dihitung adalah banyak halaman isi.</p>
+    <p><strong>Contoh:</strong> Jika jumlah halaman total 7 (termasuk cover dan daftar isi), dan total halaman cover dan daftar isi adalah 3, maka yang terhitung adalah 4 halaman.</p>
+    <p><em>*Hubungi nomor tertera untuk penjelasan lebih detail atau negosiasi.*</em></p>
 
     <h3>📊 POWERPOINT PER SLIDE</h3>
     <table class="price-table">
@@ -184,7 +206,7 @@
         </tr>
     </table>
 
-    <h3>🖨️ PRINT & JILID</h3>
+    <h3>🖨️ PRINT, FOTOCOPY DAN JILID</h3>
     <table class="price-table">
         <tr>
             <th>Layanan</th>
@@ -199,17 +221,57 @@
             <td>Rp1.500 / lembar</td>
         </tr>
         <tr>
+            <td>Foto Copy Hitam Putih</td>
+            <td>Rp1.000 / lembar</td>
+        </tr>
+        <tr>
+            <td>Foto Copy Warna</td>
+            <td>Rp1.500 / lembar</td>
+        </tr>
+        <tr>
             <td>Jilid makalah A4</td>
             <td>Rp5.000</td>
         </tr>
     </table>
 
+    <h3>📄 SCAN LAYANAN</h3>
+    <table class="price-table">
+        <tr>
+            <th>Jenis</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td>Scan Hitam Putih (Biasa)</td>
+            <td>Rp500 – Rp1.000 / lembar</td>
+        </tr>
+        <tr>
+            <td>Scan Warna (Color)</td>
+            <td>Rp1.000 – Rp1.500 / lembar</td>
+        </tr>
+        <tr>
+            <td>Scan Resolusi Tinggi (600–1200 dpi)</td>
+            <td>Rp2.000 – Rp5.000 / lembar</td>
+        </tr>
+        <tr>
+            <td>Scan + Rename + Simpan PDF/JPG</td>
+            <td>Rp2.000 – Rp3.000 / lembar</td>
+        </tr>
+        <tr>
+            <td>Scan Foto atau Gambar Detail</td>
+            <td>Rp3.000 – Rp6.000 / lembar</td>
+        </tr>
+    </table>
+    <p>🎁 Layanan Tambahan Gratis: Pengiriman hasil via WhatsApp atau Email.</p>
+
     <h3>🎁 BONUS & REVISI</h3>
-    <p>-Gratis 3x revisi</p>
-    <p>-Revisi ke-4 dan seterusnya: Rp500 / revisi</p>
-    <h3>😀SARAN</h3>
-    <p>-Harga bisa bervariasi tergantung kesulitan dan kerumitan pekerjaan.</p>
-    <P>-klik "hubungi" untuk informasi lebih detail atau negosiasi</P>
+    <ul>
+        <li>Gratis 3x revisi</li>
+        <li>Revisi ke-4 dan seterusnya: Rp500 / revisi</li>
+    </ul>
+
+    <h3>😀 SARAN</h3>
+    <p>- Harga bisa bervariasi tergantung kesulitan dan kerumitan pekerjaan.</p>
+    <p>- Klik "hubungi" untuk informasi lebih detail atau negosiasi.</p>
 
     <h3>KLIK TOMBOL HIJAU DI BAWAH INI!!!</h3>
     <a href="https://wa.me/6285902547689" class="button" target="_blank" rel="noopener noreferrer">Hubungi Kami di WhatsApp 1</a>
@@ -223,4 +285,3 @@
 
 </body>
 </html>
-
